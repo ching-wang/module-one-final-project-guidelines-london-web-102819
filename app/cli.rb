@@ -119,7 +119,7 @@ class CLI
 
 
     def successful_register
-        @user = User.create_user(@first_name, @last_name, 0.0, @email, @password, security_answer) 
+        @user = User.create_user(@first_name, @last_name, 0.0, @email, @password, @security_answer) 
         puts "You have sucessfuly registered #{@user.first_name}!"
         @user.create_portfolio
         dashboard
